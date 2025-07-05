@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CONTACT US</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    </head>
+    <body>
+        <h2>Contact us</h2>
+        <form action="/sumbit" method="POST">
+            <input type="text" name="name" placeholder="Your name"><br>
+            <input type="email"name="email"placeholder="Your email"><br>
+            <textarea name="message"placeholder="Write your message"></textarea><br>
+            <button type="submit">sumbit</button>
+        </form>
+    </body>
+    </html>
